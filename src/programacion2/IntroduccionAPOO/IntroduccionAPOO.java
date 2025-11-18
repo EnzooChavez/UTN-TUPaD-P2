@@ -84,7 +84,29 @@ public class IntroduccionAPOO {
        
        g1.mostrarEstado();
        g2.mostrarEstado();
-              
+       
+       //*Ejercicio 5: Registro de Nave Espacial*   ---*
+       
+       NaveEspacial nave = new NaveEspacial();
+       nave.setNombre("Explorador");
+       nave.setCombustible(40);
+       
+       System.out.println("Estado inicial: ");
+       nave.mostrarEstado();
+       nave.despegar();
+       nave.mostrarEstado();
+       
+       System.out.println("Avanzando 20km: ");
+       nave.avanzar(20);
+       
+       System.out.println("Recargando combustible: ");
+       nave.recargarCombustible(30);
+       
+       System.out.println("Avanzando 30km: ");
+       nave.avanzar(30);
+       
+       System.out.println("Estado final: ");
+       nave.mostrarEstado();
     }
 }
 
