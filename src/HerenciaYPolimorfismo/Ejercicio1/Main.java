@@ -9,5 +9,11 @@ package HerenciaYPolimorfismo.Ejercicio1;
  * @author EnzoAChavez
  */
 public class Main {
-    
+    public static void main(String[] args) {
+        Auto fitito = new Auto("308", "Ferrari", 2);
+        fitito.mostrarInfo();
+        
+        Vehiculo moto = new Vehiculo("A309", "Guerra");
+        moto.mostrarInfo();
+    }
 }

@@ -8,6 +8,15 @@ package HerenciaYPolimorfismo.Ejercicio3;
  *
  * @author EnzoAChavez
  */
-public class EmpleadoTemporal {
+public class EmpleadoTemporal extends Empleado {
+
+    public EmpleadoTemporal(String nombre, Long id, double sueldoMensual) {
+        super(nombre, id, sueldoMensual);
+    }
+
+    @Override
+    public double calcularSueldoAnual() {
+        return getSueldoMensual() * 6;
+    }
     
 }

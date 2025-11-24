@@ -2,19 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package HerenciaYPolimorfismo.Ejercicio2;
+package InterfacesYExcepciones.Interfaces;
 
 /**
  *
  * @author EnzoAChavez
  */
-public abstract class Figura {
+public class Cliente implements Notificable {
     private String nombre;
 
-    public Figura(String nombre) {
+    public Cliente(String nombre) {
         this.nombre = nombre;
     }
-    
-    
-    public abstract double calcularArea();
+
+    @Override
+    public void cambiarEstadoDelPedido(String nuevoEstado) {
+        System.out.println("Estado de su pedido: " + nuevoEstado);
+    }
 }
